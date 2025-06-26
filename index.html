@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/style.css">
+    <!-- ICONES -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Player de Música</title>
+</head>
+<body>
+    <div class="player">
+
+            <div class="capa-musica">
+                <img class="capa" src="src/img/Capa-album.jpg" alt="">
+            </div>
+    
+            <span id="music-name"></span>
+            <span id="artist-name"></span>
+    
+            <audio src="" id="audio"></audio>
+    
+            <div class="footer">
+                <div class="progresso-bar">
+                    <div class="progresso"></div>
+                </div>
+    
+                <div class="time">
+                    <div class="tempo-atual">00:00</div>
+                    <div class="duracao">00:00</div>
+                </div>
+            </div>
+            
+            <div class="controles">
+                <button class="btn" id="prevbutton">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+    
+                <button class="btn" id="playbutton">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+    
+                <!-- <button class="btn" id="pausebutton">
+                    <i class="fa-solid fa-pause"></i>
+                </button> -->
+    
+                <button class="btn" id="nextbutton">
+                    <i class="fa-solid fa-forward"></i> 
+               </button>
+    </div>
+
+
+
+        <script type="module" src="src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+  user-select: none;
+  background: radial-gradient(circle at center, #ffffff, #33a8ff 80%);
+}
+
+.player {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 400px;
+  width: 85%;
+  height: 600px;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.capa {
+  background-color: #f0f8ff;
+  width: 13rem;
+  height: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#music-name {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 26px;
+  text-align: center;
+  color: #001f4b;
+  font-weight: bold;
+}
+
+.controles .btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.controles .btn i {
+  font-size: 30px;
+  padding: 20px;
+  width: 100px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #e0f0ff, #c2e0ff);
+  color: #001f4b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.controles .btn i:hover {
+  /* transform: scale(1.1); */
+  background: linear-gradient(145deg, #c2e0ff, #e0f0ff);
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.time span {
+  font-size: 18px;
+  color: #333;
+}
+
+.footer {
+  width: 100%;
+}
+
+.progresso-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #d0e7ff;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.progresso {
+  height: 100%;
+  background: linear-gradient(to right, #005baa, #33a8ff);
+  border-radius: 5px;
+  width: 0%;
+  transition: width 0.2s ease;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    /* border: 1px solid #000; */
+  }
+
+  html {
+  overflow: hidden;
+  outline: none;
+}
+
+  button,
+  .btn,
+  .btn i {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .capa{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4rem;
+    margin: auto;
+  }
+
+  .player {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn {
+    padding-top: 50px;
+  }
+
+  .controles .btn i:active {
+    /* transform: scale(1.1); */
+    background: linear-gradient(145deg, #c2e0ff, #e0f0ff);
+  }
+
+  .capa {
+    background-color: #f0f8ff;
+    width: 16rem;
+    height: 16rem;
+    margin-bottom: 3rem;
+  }
+
+  .player {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
